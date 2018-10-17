@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Doctor Profile"
+    android:textColor="#fff"
+    android:textSize="18sp"
+    android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/showImageViewId"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:src="@drawable/doctoricon"
+                android:layout_height="150dp" />
+            <LinearLayout
+                android:layout_marginLeft="35dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:fontFamily="Myriad Pro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Profile"
+                    android:textColor="#36b97f"/>
+                <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/editProfileID"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:tint="#36b97f"
+                    android:src="@drawable/edit"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="20dp">
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="250dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/person"
+                        android:drawableTint="#36b97f"
+                        android:textColor="#36b97f"
+                        />
+                    <TextView
+                        android:id="@+id/nameShowId"
+                        android:textAlignment="center"
+                        android:textColor="#36b97f"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="Myriad Pro"
+                        android:hint="Doctor Name"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="250dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/email"
+                        android:drawableTint="#36b97f"
+                        android:textColor="#36b97f"
+                        />
+                    <TextView
+                        android:id="@+id/emailShowId"
+                        android:fontFamily="Myriad Pro"
+                        android:textColor="#36b97f"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:hint="support@gmail.com"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="250dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/call"
+                        android:drawableTint="#36b97f"
+                        android:textColor="#36b97f"
+                        />
+                    <TextView
+                        android:id="@+id/mobileShowId"
+                        android:textColor="#36b97f"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:hint="+910123456789"
+                        android:fontFamily="Myriad Pro"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="250dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/speciality"
+                        android:drawableTint="#36b97f"
+                        android:textColor="#36b97f"
+                        />
+                    <TextView
+                        android:id="@+id/specialityShowId"
+                        android:textColor="#36b97f"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:hint="speciality"
+                        android:fontFamily="Myriad Pro"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="250dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/degree"
+                        android:drawableTint="#36b97f"
+                        android:textColor="#36b97f"
+                        />
+                    <TextView
+                        android:id="@+id/degreeShowid"
+                        android:textColor="#36b97f"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:hint="Doctor degree"
+                        android:fontFamily="Myriad Pro"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

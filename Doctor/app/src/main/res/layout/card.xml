@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:elevation="1dp"
+        android:layout_margin="5dp">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:elevation="2dp"
+           android:layout_margin="10dp"
+           android:background="@android:color/white"
+           android:padding="8dp">
+
+           <TextView
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="5dp"
+               android:text="Name          :"
+               android:textStyle="bold"
+               android:textSize="18sp"
+               android:id="@+id/textViewName"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/name"
+               android:layout_marginLeft="5dp"
+               android:textSize="18sp"
+               android:text="Jhabru sa bgvf cbilla"
+               android:layout_toRightOf="@+id/textViewName"
+               />
+
+           <TextView
+               android:id="@+id/textViewMobile"
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/textViewName"
+               android:layout_marginLeft="5dp"
+               android:layout_marginTop="0dp"
+               android:text="Mobile        :"
+               android:textSize="18sp"
+               android:textStyle="bold" />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/mobile_number"
+               android:layout_marginLeft="5dp"
+               android:textSize="18sp"
+               android:text="4209 5214 62589 211"
+               android:layout_below="@+id/name"
+               android:layout_toRightOf="@+id/textViewMobile"
+               />
+
+           <TextView
+               android:id="@+id/textViewDesease"
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/textViewMobile"
+               android:layout_marginLeft="5dp"
+               android:layout_marginTop="0dp"
+               android:text="Desease   :"
+               android:textSize="20sp"
+               android:textStyle="bold" />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/deseaseName"
+               android:layout_marginLeft="5dp"
+               android:textSize="18sp"
+               android:text="Aids"
+               android:layout_below="@+id/mobile_number"
+               android:layout_toRightOf="@+id/textViewDesease"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="end"
+               android:text="More"
+               android:id="@+id/expandableButton1"
+               android:textColor="@android:color/holo_blue_dark"
+               android:layout_alignParentRight="true"
+               android:layout_margin="10dp"
+               android:layout_below="@+id/deseaseName"
+               android:textAlignment="viewEnd"/>
+
+           <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+               android:id="@+id/expandableLayout1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/expandableButton1"
+               android:gravity="top"
+               app:ael_duration="400"
+               app:ael_expanded="false"
+               app:ael_interpolator="accelerate"
+               app:ael_orientation="vertical">
+
+               <TextView
+                   android:id="@+id/Address"
+                   android:layout_width="100dp"
+                   android:layout_height="wrap_content"
+                   android:text="Address      :"
+                   android:maxLines="5"
+                   android:textStyle="bold"
+                   android:textSize="18sp"
+                   android:layout_below="@id/deseaseName"
+
+                   />
+
+               <TextView
+                   android:id="@+id/ViewAddess"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint=" P no A 351 Rajendra Prasad Nagar Mansarovar:"
+                   android:layout_toRightOf="@id/Address"
+                   android:layout_below="@id/deseaseName"
+                   android:textSize="18sp"
+                   />
+
+               <TextView
+                   android:id="@+id/Description"
+                   android:layout_width="100dp"
+                   android:layout_height="wrap_content"
+                   android:text="Description:"
+                   android:textStyle="bold"
+                   android:maxLines="5"
+                   android:textSize="18sp"
+                   android:layout_below="@id/ViewAddess"
+
+                   />
+
+               <TextView
+                   android:id="@+id/ViewDesc"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint=" P no A 351 Rajendra Prasad Nagar Mansarovar hdvchvdc "
+                   android:layout_toRightOf="@id/Description"
+                   android:layout_below="@id/ViewAddess"
+                   android:textSize="18sp"
+                   />
+
+           </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+       </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
